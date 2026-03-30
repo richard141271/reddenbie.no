@@ -1,9 +1,3 @@
-<nav class="topnav">
-  <a href="https://leksystem.no">LEK-Systemet</a>
-  <a href="https://reddenbie.no">Redd en bie</a>
-  <a href="https://biehelse.no">Biehelse</a>
-  <a href="https://lekbien.no">App</a>
-</nav>
 <!DOCTYPE html>
 <html lang="no">
 <head>
@@ -16,21 +10,46 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     background: #0b0f14;
-    color: #fff;
+    color: #ffffff;
 }
 
-header {
+/* TOPPMENY */
+.topnav {
+    background: #071a22;
+    padding: 15px;
+    text-align: center;
+}
+
+.topnav a {
+    color: #ccc;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.topnav a:hover {
+    color: #facc15;
+}
+
+/* HEADER */
+.header {
+    background: linear-gradient(135deg, #facc15, #f59e0b);
     padding: 60px 20px;
     text-align: center;
-    background: linear-gradient(135deg, #facc15, #f59e0b);
     color: #000;
 }
 
-h1 {
-    margin: 0;
+.header h1 {
     font-size: 42px;
+    margin: 0;
 }
 
+.header p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* CONTENT */
 .container {
     max-width: 900px;
     margin: 40px auto;
@@ -38,25 +57,57 @@ h1 {
 }
 
 .card {
-    background: #121821;
-    padding: 25px;
-    margin-bottom: 20px;
+    background: #111826;
     border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
+
+.card h2 {
+    margin-top: 0;
+}
+
+ul {
+    padding-left: 20px;
 }
 
 img {
     width: 100%;
+    max-width: 500px;
     border-radius: 12px;
 }
 
-a.button {
+/* BUTTON */
+.button {
     display: inline-block;
+    margin-top: 15px;
     padding: 12px 20px;
     background: #facc15;
-    color: #000;
-    text-decoration: none;
+    color: black;
     border-radius: 8px;
+    text-decoration: none;
     font-weight: bold;
+}
+
+/* FOOTER */
+footer {
+    background: #0b1f2a;
+    color: #aaa;
+    text-align: center;
+    padding: 30px 20px;
+    font-size: 14px;
+    margin-top: 40px;
+}
+
+footer a {
+    color: #ccc;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #fff;
 }
 </style>
 
@@ -64,20 +115,27 @@ a.button {
 
 <body>
 
-<header>
-    <h1>🐝 REDD EN BIE</h1>
-    <p style="font-size:18px; margin-top:10px;">
-Støtt bier, lokale miljøer og framtiden – én honningkrukke av gangen 🍯
-</p>
-</header>
+<!-- TOPPMENY -->
+<nav class="topnav">
+  <a href="https://leksystem.no">LEK-Systemet</a>
+  <a href="https://reddenbie.no">Redd en bie</a>
+  <a href="https://biehelse.no">Biehelse</a>
+</nav>
 
+<!-- HEADER -->
+<div class="header">
+    <h1>🐝 REDD EN BIE</h1>
+    <p>Støtt bier, lokale miljøer og framtiden – én honningkrukke av gangen 🍯</p>
+</div>
+
+<!-- CONTENT -->
 <div class="container">
 
     <div class="card">
         <h2>Hva er Redd en bie?</h2>
         <p>
         Redd en bie er et samarbeidsprosjekt mellom <b>OBNO (Optimal Biehelse Norge)</b> og 
-        <b>LEK-Biens Vokter™ / LEK-systemet</b>.
+        <b>LEK-Biens Vokter™ / LEK-Systemet</b>.
         </p>
         <p>
         Målet er å styrke norsk birøkt, støtte lokale miljøer og bidra til bedre forhold for 
@@ -102,7 +160,7 @@ Støtt bier, lokale miljøer og framtiden – én honningkrukke av gangen 🍯
 
     <div class="card">
         <h2>Butikkdispenser</h2>
-        <img src="honningboks.jpeg" style="width:100%; max-width:500px; border-radius:10px;">
+        <img src="honningboks.jpeg">
         <p>
         Dispenseren gjør det enkelt å selge honning lokalt, samtidig som den skaper synlighet 
         og engasjement rundt prosjektet.
@@ -115,7 +173,7 @@ Støtt bier, lokale miljøer og framtiden – én honningkrukke av gangen 🍯
             <li>🍯 Birøkteren – bedre avsetning og økonomi</li>
             <li>⚽ Lokale lag og foreninger – nye inntekter</li>
             <li>🌍 Samfunnet – sterkere pollinatorgrunnlag</li>
-            <li>🧠 LEK-systemet – struktur og utvikling</li>
+            <li>🧠 LEK-Systemet – struktur og utvikling</li>
         </ul>
     </div>
 
@@ -132,9 +190,7 @@ Støtt bier, lokale miljøer og framtiden – én honningkrukke av gangen 🍯
 
     <div class="card">
         <h2>Bli med</h2>
-        <p>
-        Vil du være med på prosjektet?
-        </p>
+        <p>Vil du være med på prosjektet?</p>
         <ul>
             <li>Selge honning</li>
             <li>Ha en dispenser</li>
@@ -145,26 +201,18 @@ Støtt bier, lokale miljøer og framtiden – én honningkrukke av gangen 🍯
 
 </div>
 
-</body>
-</html>
-<footer style="
-  background:#0b1f2a;
-  color:#aaa;
-  text-align:center;
-  padding:30px 20px;
-  font-size:14px;
-">
-
-  <div style="margin-bottom:10px;">
-    <a href="https://leksystem.no" style="color:#ccc; margin:0 10px; text-decoration:none;">LEK-Systemet</a>
-    |
-    <a href="https://reddenbie.no" style="color:#ccc; margin:0 10px; text-decoration:none;">Redd en bie</a>
-    |
-    <a href="https://biehelse.no" style="color:#ccc; margin:0 10px; text-decoration:none;">Biehelse</a>
+<!-- FOOTER -->
+<footer>
+  <div>
+    <a href="https://leksystem.no">LEK-Systemet</a> |
+    <a href="https://reddenbie.no">Redd en bie</a> |
+    <a href="https://biehelse.no">Biehelse</a>
   </div>
 
   <div style="margin-top:10px;">
-    © 2026 <a href="https://aiinnovate.no" style="color:#ccc; text-decoration:none;">AI Innovate AS</a>
+    © 2026 <a href="https://aiinnovate.no">AI Innovate AS</a>
   </div>
-
 </footer>
+
+</body>
+</html>
